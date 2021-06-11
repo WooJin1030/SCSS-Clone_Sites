@@ -1,0 +1,13 @@
+%li {
+  list-style: none;
+  a {
+    margin-right: 13.5px;
+    margin-bottom: 6.75px;
+    text-decoration: none;
+    color: #696969;
+    border-bottom: 2px solid #696969;
+    &:hover {
+      color: black;
+    }
+  }
+}
