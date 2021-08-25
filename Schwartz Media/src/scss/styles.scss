@@ -1,0 +1,289 @@
+@import "../../dist/css/reset.css";
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  header {
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    cursor: pointer;
+    padding: 0 24px;
+    span {
+      font-size: 48px;
+      font-weight: bold;
+    }
+    .header__left {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      i {
+        margin-right: 24px;
+        font-size: 24px;
+        padding: 0;
+      }
+    }
+    .header__right {
+      margin-right: 48px;
+    }
+  }
+
+  main {
+    padding: 26px 76px 53px 76px;
+    height: 100%;
+    .section1 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .section1__image {
+        width: 55%;
+        height: 75%;
+        background-image: url("../../assets/image1.png");
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 36px;
+      }
+      span {
+        font-size: 36px;
+        font-weight: bold;
+      }
+    }
+
+    .section2 {
+      height: 70%;
+      width: 77%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 80px;
+      margin-bottom: 160px;
+
+      p {
+        display: inline;
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .info__about {
+        margin-right: 36px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .section2__link {
+        margin-top: 24px;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+
+        div {
+          transition: transform 300ms ease-in;
+          margin-left: 8px;
+        }
+
+        &:hover {
+          div {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+
+    .section3 {
+      height: calc(100vh * 3.5);
+      width: 77%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr) 1.3fr 1fr;
+
+      .section3__box1,
+      .section3__box4,
+      .section3__box5,
+      .section3__box8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-top: 1px solid $borderColor;
+        .section3__title {
+          span {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+        .section3__info {
+          font-size: 32px;
+          line-height: 36px;
+        }
+        .section3__btn {
+          button {
+            cursor: pointer;
+            font-size: 16px;
+            background-color: white;
+            border: 2px solid $borderColor;
+            border-radius: 32px;
+            padding: 10px 20px;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+              color: white;
+              background-color: black;
+            }
+          }
+        }
+      }
+
+      .section3__box2,
+      .section3__box3,
+      .section3__box6,
+      .section3__box7 {
+        width: 100%;
+        height: 100%;
+        border-top: 1px solid $borderColor;
+        display: flex;
+        align-items: center;
+        .box__image1 {
+          width: 100%;
+          height: 80%;
+          background-image: url("../../assets/grid1.png");
+          background-position: center;
+          background-size: cover;
+          margin-left: 32px;
+        }
+        .box__image2 {
+          width: 100%;
+          height: 80%;
+          background-image: url("../../assets/grid2.png");
+          background-position: center;
+          background-size: cover;
+          margin-right: 32px;
+        }
+        .box__image3 {
+          width: 100%;
+          height: 80%;
+          background-image: url("../../assets/grid3.png");
+          background-position: center;
+          background-size: cover;
+          margin-left: 32px;
+        }
+        .box__image4 {
+          width: 100%;
+          height: 80%;
+          background-image: url("../../assets/grid4.png");
+          background-position: center;
+          background-size: cover;
+          margin-right: 32px;
+        }
+      }
+
+      .section3__box9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-top: 1px solid $borderColor;
+
+        .section3__title {
+          margin-top: 24px;
+          margin-bottom: 36px;
+          span {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+
+        .box__image5 {
+          width: 95%;
+          height: 80%;
+          background-image: url("../../assets/grid5.png");
+          background-position: center;
+          background-size: cover;
+          margin-right: 32px;
+          margin-bottom: 16px;
+        }
+
+        .section3__info {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 36px;
+        }
+
+        .section3__btn {
+          button {
+            cursor: pointer;
+            font-size: 16px;
+            background-color: white;
+            border: 2px solid $borderColor;
+            border-radius: 32px;
+            padding: 10px 20px;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+              color: white;
+              background-color: black;
+            }
+          }
+        }
+      }
+
+      .section3__box10 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-top: 1px solid $borderColor;
+
+        .section3__title {
+          margin-top: 24px;
+          margin-bottom: 36px;
+          span {
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+
+        .box__image6 {
+          width: 95%;
+          height: 80%;
+          background-image: url("../../assets/grid6.png");
+          background-position: center;
+          background-size: cover;
+          margin-left: 32px;
+          margin-bottom: 16px;
+        }
+
+        .section3__info {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 36px;
+        }
+
+        .section3__btn {
+          button {
+            cursor: pointer;
+            font-size: 16px;
+            background-color: white;
+            border: 2px solid $borderColor;
+            border-radius: 32px;
+            padding: 10px 20px;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+              color: white;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
